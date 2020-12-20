@@ -77,6 +77,8 @@ from ansible.module_utils.six.moves import cStringIO
 from ansible.module_utils.basic import get_distribution, missing_required_lib
 from ansible.module_utils._text import to_bytes, to_native, to_text
 
+# file deepcode ignore W0703: <comment the reason here>
+
 try:
     # python3
     import urllib.request as urllib_request
