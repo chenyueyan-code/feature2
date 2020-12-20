@@ -2,7 +2,7 @@
 
 <script>
 export default {
-  methods {
+  methods() {
     update() {}
   },
   mounted() {
