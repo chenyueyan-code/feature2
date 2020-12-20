@@ -91,12 +91,14 @@ urllib_request.HTTPRedirectHandler.http_error_308 = urllib_request.HTTPRedirectH
 try:
     from ansible.module_utils.six.moves.urllib.parse import urlparse, urlunparse
     HAS_URLPARSE = True
-except Exception:
+#  deepcode ignore W0703: <comment the reason here>
+    except Exception:
     HAS_URLPARSE = False
 
 try:
     import ssl
     HAS_SSL = True
+    #  deepcode ignore W0703: <comment the reason here>
 except Exception:
     HAS_SSL = False
 
