@@ -2,9 +2,6 @@
 
 <script>
 export default {
-  methods() {
-    update() {}
-  },
   mounted() {
     window.addEventListener('hashchange', this.update, false);
   },
