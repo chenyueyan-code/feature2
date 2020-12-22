@@ -76,6 +76,7 @@ export class BadEventHandlerReturnFalse extends Component {
     render() {
         return (
             <div>
+            //  deepcode ignore ReactEventHandlerThis: <comment the reason here>
                 <button onClick={this.onMaximizeClick}></button>
             </div>
         );
