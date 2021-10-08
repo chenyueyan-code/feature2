@@ -1,28 +1,23 @@
 version: v1.0
-name: Python
+name: Initial Pipeline
 agent:
   machine:
     type: e1-standard-2
-    os_image: ubuntu1804
+    os_image: ubuntu2004
 blocks:
-  - name: Test
+  - name: 'Block #1'
     task:
       jobs:
-        - name: pytest
+        - name: 'Job #1'
           commands:
-            - sem-version python 3.7
             - checkout
-            - python -m pip install --upgrade pip
-            - pip install -r requirements.txt
-            - pip install flake8
-            - 'flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics'
-            - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-            - pip install pytest
-            - pytest
-promotions:
-  - name: Promotion 1
-    pipeline_file: pipeline_2.yml
-    auto_promote:
-      when: branch = 'master' AND result = 'passed'
-  - name: Promotion 2
-    pipeline_file: pipeline_3.yml
+  - name: 'Block #2'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands: []
+  - name: 'Block #3'
+    task:
+      jobs:
+        - name: job testing
+          commands: []
