@@ -214,13 +214,10 @@ class Node:
 
                 if(self.state[i][j]!=0):
 
-                    ans = ans + abs((self.state[i][j]-1)%self.size - j) + abs((self.state[i][j]-1)//self.size - i)
-
-                
+                    ans = ans + abs((self.state[i][j]-1) % self.size - j) 
+                    + abs((self.state[i][j]-1)//self.size - i)              
 
         return ans
-
-
 
 
     def getHammingDistance(self):
@@ -231,13 +228,11 @@ class Node:
 
             for j in range(self.size):
 
-                if(self.state[i][j]!=0 and self.state[i][j]!= i*3 + (j+1)):
+                if(self.state[i][j] != 0 and self.state[i][j] != i * 3 + (j + 1)):
 
                     ans = ans + 1
 
         return ans
-
-
 
 
     def __hash__(self):        
@@ -289,7 +284,7 @@ class Node:
 
     def __ge__(self, other):
 
-        if(self.optimizer==0):
+        if(self.optimizer == 0):
 
             if(self.getManhattanDistance() >= other.getManhattanDistance()):
 
@@ -320,8 +315,6 @@ class Node:
                 return False
 
         return True
-
-
 
 
     def __lt__(self, other):
