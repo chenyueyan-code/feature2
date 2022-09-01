@@ -1,0 +1,2 @@
+# feature2
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c9aaff94111241d1ac44f7cb916e010d)](https://app.codacy.com/gh/chenyueyan-code/feature2?utm_source=github.com&utm_medium=referral&utm_content=chenyueyan-code/feature2&utm_campaign=Badge_Grade_Settings)
