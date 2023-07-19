@@ -476,7 +476,7 @@ class Solver:
 
         '''
 
-        if(self.isSolvable()==False):
+        if(self.isSolvable() is False):
 
             return (None,None)
 
@@ -525,7 +525,7 @@ class Solver:
 
         '''
 
-        if(self.isSolvable()==False):
+        if(self.isSolvable() is False):
 
             return (None,None)
 
@@ -569,7 +569,7 @@ class Solver:
 
         '''
 
-        if(self.isSolvable()==False):
+        if(self.isSolvable() is False):
 
             return (None,None)
 
@@ -613,7 +613,7 @@ class Solver:
 
         '''
 
-        if(self.isSolvable()==False):
+        if(self.isSolvable() is False):
 
             return (None,None)
 
