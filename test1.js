@@ -34,7 +34,7 @@ export class BadReactApiReturnValue extends Component {
 
 export class MissingReturnValue extends Component {
     recordFieldFocus(fieldId) {
-        console.log('Focused on field', fieldId);
+        
     }
 
     render() {
