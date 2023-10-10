@@ -1,7 +1,10 @@
 version = 1
 
 [[analyzers]]
-name = "cxx"
+name = "javascript"
 
-[[transformers]]
-name = "clang-format"
+[[analyzers]]
+name = "python"
+
+  [analyzers.meta]
+  runtime_version = "3.x.x"
